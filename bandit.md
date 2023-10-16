@@ -139,7 +139,7 @@ documentation of overthewirebandit progress
 
 **using a new command** `strings` **and** `grep`, **strings output all the strings from the file and grep prints line that matches pattern**
 
-**the key is, password is next to word 'millionth', so by adding pipe '|', i can filted the strings with grep**
+**the key is, password is next to word 'millionth', so by adding pipe '|', i can filter the strings with grep**
 
 *password - TESKZC0XvTetK0S9xNwm25STk5iWrBvP*
 
