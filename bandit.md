@@ -88,11 +88,10 @@ referred to [this](https://man7.org/linux/man-pages/man1/ls.1.html)
 ### level 5 ->6
 
 
-`cd inhere`
-
-`find -size 1033c`
-
-`ssh -p 2220 bandit6@bandit.labs.overthewire.org`
+1.  `cd inhere`
+2.  `find -size 1033c`
+3.  `cat ./inhere/maybehere07/.file2`
+4.  `ssh -p 2220 bandit6@bandit.labs.overthewire.org`
 
 **filter out files by using the size given which is 1033 bytes, bytes is represented by c**
 
@@ -102,6 +101,9 @@ referred to [this](https://man7.org/linux/man-pages/man1/ls.1.html)
 
 1.  `cd ..`
 2.  `find ../ -type f -size 33c -user bandit7 -group bandit6`
+3.  `cat ../var/lib/dpkg/info/bandit7.password`
+4.  `ssh -p 2220 bandit7@bandit.labs.overthewire.org`
+
 
 **i decided to go back one directory since it says file is in the server, then use find**`../ `**to find further back, **`-type`** filers by making output to be only file and output is being further filtered by** `-user` **and** `-group`
 
