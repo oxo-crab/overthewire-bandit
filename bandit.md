@@ -67,6 +67,6 @@ referred to [this](https://linuxhandbook.com/filename-spaces-linux/)
 
 **used** `ls` **to list out content of directories, found 'inhere' directory, used** `cd` **to change directory, used** `find` **to find files in 'inhere', can alternatively use** `ls -a`, `-a` **is used to show files that start with a ' . '**
 
-referred to [this](https://man7.org/linux/man-pages/man1/ls.1.html) regarding 'ls -a'
+referred to [this](https://man7.org/linux/man-pages/man1/ls.1.html) regarding `ls -a`
 
 ---
