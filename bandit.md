@@ -103,8 +103,10 @@ referred to [this](https://man7.org/linux/man-pages/man1/ls.1.html)
 1.  `cd ..`
 2.  `find ../ -type f -size 33c -user bandit7 -group bandit6`
 
-**first type i decided to go back one directory since it sayas file is in the server, then use find **`../ `**to find further back, **`-type`** filers by making output to be only file and output is being further filtered by** `-user` **and** `-group`
+**i decided to go back one directory since it says file is in the server, then use find**`../ `**to find further back, **`-type`** filers by making output to be only file and output is being further filtered by** `-user` **and** `-group`
+
 **this throws out lot of results with permission denied in several files, finding the password location within is hard. This can be fixed by introducing** `2>/dev/null`  **at the end of find command,it writesall the error output in 'void'** 
+
 referred to this [this](https://unix.stackexchange.com/questions/70963/difference-between-2-2-dev-null-dev-null-and-dev-null-21) and [this](https://man7.org/linux/man-pages/man1/find.1.html)
 
 password - z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S
