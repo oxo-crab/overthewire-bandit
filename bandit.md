@@ -10,6 +10,8 @@ documentation of overthewirebandit progress
 
 **the syntax is usually**  `ssh user@server `**where i can additionaly use -p to specify port**
 
+password  bandit0
+
 ---
 
 ### level 0 -> 1
@@ -29,6 +31,7 @@ documentation of overthewirebandit progress
 
 **i can also use ctrl+d to terminate the ssh session**
 
+password - NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
 ---
 
 ### level 1 -> 2
@@ -42,6 +45,8 @@ documentation of overthewirebandit progress
 
 referred to [this](https://stackoverflow.com/questions/42187323/how-to-open-a-dashed-filename-using-terminal)
 
+passwordd - rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
+
 ---
 
 ### level 2 -> 3
@@ -54,6 +59,7 @@ referred to [this](https://stackoverflow.com/questions/42187323/how-to-open-a-da
 
 referred to [this](https://linuxhandbook.com/filename-spaces-linux/)
 
+password - aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG
 ---
 
 ### level 3 -> 4
@@ -69,6 +75,7 @@ referred to [this](https://linuxhandbook.com/filename-spaces-linux/)
 
 referred to [this](https://man7.org/linux/man-pages/man1/ls.1.html) regarding `ls -a`
 
+password -2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe
 ---
 
 ### level 4 -> 5
@@ -84,13 +91,15 @@ referred to [this](https://man7.org/linux/man-pages/man1/ls.1.html) regarding `l
 
 referred to [this](https://man7.org/linux/man-pages/man1/ls.1.html)
 
+password - lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
+
 ---
 ### level 5 ->6
 
 
 1.  `cd inhere`
 2.  `find -size 1033c`
-3.  `cat ./inhere/maybehere07/.file2`
+3.  `cat ./maybehere07/.file2`
 4.  `ssh -p 2220 bandit6@bandit.labs.overthewire.org`
 
 **filter out files by using the size given which is 1033 bytes, bytes is represented by c**
@@ -119,4 +128,5 @@ password - z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S
 
 ---
 
----
+### level 7 -> 8
+
