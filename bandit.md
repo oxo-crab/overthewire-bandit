@@ -46,3 +46,11 @@ referred to [this](https://stackoverflow.com/questions/42187323/how-to-open-a-da
 
 ### level 2 -> 3
 
+`cat 'spaces in this filename' `  or `cat spaces\ in\ this\ filename`
+
+`ssh -p 2220 bandit3@bandit.labs.overthewire.org`
+
+**to open files with spaces i have to wrap the file name in '' to indicate it's one singe file or i can use \ to escape spaces**
+
+---
+
