@@ -85,4 +85,18 @@ referred to [this](https://man7.org/linux/man-pages/man1/ls.1.html) regarding `l
 referred to [this](https://man7.org/linux/man-pages/man1/ls.1.html)
 
 ---
+### level 5 ->6
+
+
+`cd inhere`
+
+`find -size 1033c`
+
+`ssh -p 2220 bandit6@bandit.labs.overthewire.org`
+
+**filter out files by using the size given which is 1033 bytes, bytes is represented by c**
+
+--
+
+### level 6 -> 7
 
