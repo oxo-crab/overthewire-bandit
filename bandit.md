@@ -10,7 +10,7 @@ documentation of overthewirebandit progress
 
 **the syntax is usually**  `ssh user@server `**where i can additionaly use -p to specify port**
 
-password  bandit0
+*password - bandit0*
 
 ---
 
@@ -31,7 +31,8 @@ password  bandit0
 
 **i can also use ctrl+d to terminate the ssh session**
 
-password - NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
+*password - NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL*
+
 ---
 
 ### level 1 -> 2
@@ -43,9 +44,9 @@ password - NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
 
 **when opening a dashed filename i have to specify the full location or alternatively redirect**
 
-referred to [this](https://stackoverflow.com/questions/42187323/how-to-open-a-dashed-filename-using-terminal)
+*referred to [this](https://stackoverflow.com/questions/42187323/how-to-open-a-dashed-filename-using-terminal)*
 
-passwordd - rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
+*password - rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi*
 
 ---
 
@@ -57,9 +58,10 @@ passwordd - rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
 
 **to open files with spaces i have to wrap the file name in '' to indicate it's one singe file or i can use \ to escape spaces**
 
-referred to [this](https://linuxhandbook.com/filename-spaces-linux/)
+*referred to [this](https://linuxhandbook.com/filename-spaces-linux/)*
 
-password - aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG
+*password - aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG*
+
 ---
 
 ### level 3 -> 4
@@ -73,9 +75,10 @@ password - aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG
 
 **used** `ls` **to list out content of directories, found 'inhere' directory, used** `cd` **to change directory, used** `find` **to find files in 'inhere', can alternatively use** `ls -a`, `-a` **is used to show files that start with a ' . '**
 
-referred to [this](https://man7.org/linux/man-pages/man1/ls.1.html) regarding `ls -a`
+*referred to [this](https://man7.org/linux/man-pages/man1/ls.1.html) regarding *`ls -a`
 
-password -2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe
+*password -2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe*
+
 ---
 
 ### level 4 -> 5
@@ -89,9 +92,9 @@ password -2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe
 
 **used** `-h` **to include human readable file**
 
-referred to [this](https://man7.org/linux/man-pages/man1/ls.1.html)
+*referred to [this](https://man7.org/linux/man-pages/man1/ls.1.html)*
 
-password - lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
+*password - lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR*
 
 ---
 ### level 5 ->6
@@ -104,9 +107,9 @@ password - lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
 
 **filter out files by using the size given which is 1033 bytes, bytes is represented by c**
 
-referred to [this](https://man7.org/linux/man-pages/man1/find.1.html)
+*referred to [this](https://man7.org/linux/man-pages/man1/find.1.html)*
 
-password - P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU
+*password - P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU*
 
 --
 
@@ -122,9 +125,9 @@ password - P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU
 
 **this throws out lot of results with permission denied in several files, finding the password location within is hard. This can be fixed by introducing** `2>/dev/null`  **at the end of find command,it writesall the error output in 'void'** 
 
-referred to this [this](https://unix.stackexchange.com/questions/70963/difference-between-2-2-dev-null-dev-null-and-dev-null-21) and [this](https://man7.org/linux/man-pages/man1/find.1.html)
+*referred to this [this](https://unix.stackexchange.com/questions/70963/difference-between-2-2-dev-null-dev-null-and-dev-null-21) and [this](https://man7.org/linux/man-pages/man1/find.1.html)*
 
-password - z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S
+*password - z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S*
 
 ---
 
