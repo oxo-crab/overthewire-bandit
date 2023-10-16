@@ -133,3 +133,16 @@ documentation of overthewirebandit progress
 
 ### level 7 -> 8
 
+1.  `strings data.txt| grep millionth`
+2.  `ssh -p 2220 bandit8@bandit.labs.overthewire.org`
+
+
+**using a new command** `strings` **and** `grep`, **strings output all the strings from the file and grep prints line that matches pattern**
+
+**the key is, password is next to word 'millionth', so by adding pipe '|', i can filted the strings with grep**
+
+*password - TESKZC0XvTetK0S9xNwm25STk5iWrBvP*
+
+---
+
+
