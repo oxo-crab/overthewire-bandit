@@ -95,6 +95,10 @@ referred to [this](https://man7.org/linux/man-pages/man1/ls.1.html)
 
 **filter out files by using the size given which is 1033 bytes, bytes is represented by c**
 
+referred to [this](https://man7.org/linux/man-pages/man1/find.1.html)
+
+password - P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU
+
 --
 
 ### level 6 -> 7
