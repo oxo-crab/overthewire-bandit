@@ -15,6 +15,7 @@ documentation of overthewirebandit progress
 ### level 0 -> 1
 
 ` cat readme `
+
 `ssh -p 2220 bandit1@bandit.labs.overthewire.org`
 
 **learned about various commands like**
