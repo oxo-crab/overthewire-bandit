@@ -70,3 +70,19 @@ referred to [this](https://linuxhandbook.com/filename-spaces-linux/)
 referred to [this](https://man7.org/linux/man-pages/man1/ls.1.html) regarding `ls -a`
 
 ---
+
+### level 4 -> 5
+
+1.  `ls -a`
+2.  `cd inhere`
+3.  `ls -a -h`
+4.  `cat < -file07`
+
+`ssh -p 2220 bandit5@bandit.labs.overthewire.org`
+
+**used** `-h` **to include human readable file**
+
+referred to [this](https://man7.org/linux/man-pages/man1/ls.1.html)
+
+---
+
