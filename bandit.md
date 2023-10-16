@@ -141,6 +141,8 @@ documentation of overthewirebandit progress
 
 **the key is, password is next to word 'millionth', so by adding pipe '|', i can filter the strings with grep**
 
+*referrencing [this](https://man7.org/linux/man-pages/man1/grep.1.html) and [this](https://www.man7.org/linux/man-pages/man1/strings.1.html)*
+
 *password - TESKZC0XvTetK0S9xNwm25STk5iWrBvP*
 
 ---
