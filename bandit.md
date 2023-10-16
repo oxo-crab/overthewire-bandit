@@ -32,3 +32,17 @@ documentation of overthewirebandit progress
 ---
 
 ### level 1 -> 2
+
+
+`cat ./-`  or `cat < -`
+
+`cat -p 2220 bandit2@bandit.labs.overthewire.org '
+
+**when opening a dashed filename i have to specify the full location or alternatively redirect**
+
+referred to [this](https://stackoverflow.com/questions/42187323/how-to-open-a-dashed-filename-using-terminal)
+
+---
+
+### level 2 -> 3
+
