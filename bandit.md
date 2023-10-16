@@ -52,5 +52,21 @@ referred to [this](https://stackoverflow.com/questions/42187323/how-to-open-a-da
 
 **to open files with spaces i have to wrap the file name in '' to indicate it's one singe file or i can use \ to escape spaces**
 
+referred to [this](https://linuxhandbook.com/filename-spaces-linux/)
+
 ---
 
+### level 3 -> 4
+
+1.  `ls`
+2.  `cd inhere`
+3.  `find`
+4.  `cat .hidden`
+
+ `ssh -p 2220 bandit4@bandit.labs.overthewire.org`
+
+**used** `ls` **to list out content of directories, found 'inhere' directory, used** `cd` **to change directory, used** `find` **to find files in 'inhere', can alternatively use** `ls -a`, `-a` **is used to show files that start with a ' . '**
+
+referred to [this](https://man7.org/linux/man-pages/man1/ls.1.html) regarding 'ls -a'
+
+---
