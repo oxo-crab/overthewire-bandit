@@ -85,14 +85,15 @@ documentation of overthewirebandit progress
 
 1.  `ls -a`
 2.  `cd inhere`
-3.  `ls -a -h`
+3.  `file ./*`
 4.  `cat < -file07`
+
+`file ./*` **with this the type fo file in inhere can be determinded, there is only one file with ascii characters**
 
 `ssh -p 2220 bandit5@bandit.labs.overthewire.org`
 
-**used** `-h` **to include human readable file**
 
-*referred to [this](https://man7.org/linux/man-pages/man1/ls.1.html)*
+*referred to [this](https://man7.org/linux/man-pages/man1/ls.1.html)* *and [this](https://mayadevbe.me/posts/overthewire/bandit/level5/) for the use of*`file ./*`
 
 *password - lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR*
 
