@@ -148,4 +148,17 @@ documentation of overthewirebandit progress
 
 ---
 
+### level 8 -> 9
+
+1.  `cat data.txt|sort|uniq -u`
+2.  `ssh -p 2220 bandit9@bandit.labs.overthewire.org`
+
+**it's necessary to use sort before applying uniq command as unique only removes [succesive duplicate lines](https://www.man7.org/linux/man-pages/man1/uniq.1.html)** 
+
+*password - EN632PlfYiZbn3PhVK3XOGSlNInNE00t*
+
+---
+
+
+
 
