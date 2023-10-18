@@ -159,6 +159,38 @@ documentation of overthewirebandit progress
 
 ---
 
+### level 9->10 
+
+1.  `strings data.txt| grep ===`
+2.  `ssh -p 2220 bandit10@bandit.labs.overthewire.org`
+
+**as strings is capable of printing sequences of printablle characters, it's a better fit compared to cat as the file is binary, and the data is messy and overlapping over the password,this way only 'human-readable' text shows up**
+
+*password - G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s*
+
+---
+### level 10 -> 11
+
+
+1.  `base64 -d data.txt`
+2.  `ssh -p 2220 bandit11@bandit.labs.overthewire.org`
+
+**question directly states that data is base64 encoded.**
+
+*password - 6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM*
+
+---
+
+### level 11 -> 12
+
+1. `strings data.txt| tr 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz' 'NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm`
+2. `ssh -p 2220 bandit12@bandit.labs.overthewire.org`
+
+**As the wiki states, in rot13, all the alphabets are rotated forward by 13 so tr is used to replace all the alphabets from 'A-z' to 'N-m',apllying rot13 on already rot13 encrypted data decrypts it.**
+
+*password - JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv*
+
+---
 
 
 
