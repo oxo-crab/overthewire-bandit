@@ -218,10 +218,30 @@ documentation of overthewirebandit progress
       -  `xxd wow1`
       -  `mv wow1 wow1.tar`
       -  `tar -xf wow1.tar` *xf is for extracting all the files*
-7. **
+7. **seeing no recognizable file signature this time around i assume it's archive again and go through the previous procedure and get**`data6.bin`
+      -  `xxd data5.bin`
+      -  mv data5.bin data5.tar
+      -  tar -xf data5.tar
 
+8. **i notice 425a 68 again in xxd output of** `data6.bin` **i go through the procedure of step 5 again to decompress data6**
+     - `mv data6.bin data6.bz2`
+     - `bzip2 -d data6.bz2`
+
+9. **after running xxd through uncompressed data6 fle i see** `data8.bin` **and** `data9.bin`  **and ustar as well indicating it's archive,after the procedure we get**`data8.bin`
+      - `mv data6 data6.tar`
+      - `tar -xf data6.tar`
+10. **after running xxd through data8.bin i see** `data9.bin` **and 1f85 header again, i convert** `data8.bin` **to** `data8.gz` **and uncompress it like usual, getting an uncompressed data8 file**
+      - `mv data8.bin data8.gz`
+      - `gzip -d data8.gz`
+   
+11. **upon reading data8 through strings i get the password**
+      - `strings data8`
+
+*hopefully the nextt question won't be this long, i referred to many different pages in manual and wiki for headers*
 
 *password -> wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw*
+
+---
 
 
 
