@@ -208,33 +208,48 @@ documentation of overthewirebandit progress
      -  `mv wow1 wow1.gz`
      -  then i uncompress it
          -  `gzip -d wow1.gz`
+
+    ![n1](https://github.com/oxo-crab/overthewire-bandit/blob/main/screenshot%20for%20writeup/q12_bin2.jpg)
        
 5. **after running xxd through**`wow1`**i see 425a with 68 too which corrosponds to bzip version2, obviously i couldn't figure it out without** [this](https://en.wikipedia.org/wiki/List_of_file_signatures) **now on renaming it to a .bz2 file and uncompressing it again,i can move ahead.**
       -  `xxd wow1`
       -  `mv wow1 wow1.bz2`
       -  `bzip2 -d wow1.bz2`
 
-6.  **this time i see 1f85 again along with data5.bin but using the previous method gives nothing, however conerting wow1 to** `wow1.tar` **and then using tar command to unarchive gives data5.bin**
+    ![n7](https://github.com/oxo-crab/overthewire-bandit/blob/main/screenshot%20for%20writeup/q12_%201st%20bz2%20hint.jpg)
+
+6.  **this time i see 1f85 again along with data4.bin but using the previous method gives nothing, however conerting wow1 to** `wow1.tar` **and then using tar command to unarchive gives data5.bin**
       -  `xxd wow1`
       -  `mv wow1 wow1.tar`
       -  `tar -xf wow1.tar` *xf is for extracting all the files*
+
+    ![n2](https://github.com/oxo-crab/overthewire-bandit/blob/main/screenshot%20for%20writeup/q12_binn4.jpg)
+
 7. **seeing no recognizable file signature this time around i assume it's archive again and go through the previous procedure and get**`data6.bin`
       -  `xxd data5.bin`
-      -  mv data5.bin data5.tar
-      -  tar -xf data5.tar
+      -  `mv data5.bin data5.tar`
+      -  `tar -xf data5.tar`
+      
+    ![n5](https://github.com/oxo-crab/overthewire-bandit/blob/main/screenshot%20for%20writeup/q12__%20bin6.jpg) 
 
 8. **i notice 425a 68 again in xxd output of** `data6.bin` **i go through the procedure of step 5 again to decompress data6**
      - `mv data6.bin data6.bz2`
      - `bzip2 -d data6.bz2`
-
+ 
+    ![n3]( https://github.com/oxo-crab/overthewire-bandit/blob/main/screenshot%20for%20writeup/data6%20is%20bz2%20.jpg)
 9. **after running xxd through uncompressed data6 fle i see** `data8.bin` **and** `data9.bin`  **and ustar as well indicating it's archive,after the procedure we get**`data8.bin`
       - `mv data6 data6.tar`
       - `tar -xf data6.tar`
+
+    ![n4](https://github.com/oxo-crab/overthewire-bandit/blob/main/screenshot%20for%20writeup/q_12%20tar%20file%20data8%20and%20data9%20bin%20files.jpg)
+
 10. **after running xxd through data8.bin i see** `data9.bin` **and 1f85 header again, i convert** `data8.bin` **to** `data8.gz` **and uncompress it like usual, getting an uncompressed data8 file**
       - `mv data8.bin data8.gz`
       - `gzip -d data8.gz`
-   
-11. **upon reading data8 through strings i get the password**
+
+      ![n6](https://github.com/oxo-crab/overthewire-bandit/blob/main/screenshot%20for%20writeup/q12_%20data8bin%20has%20data9.jpg)
+
+12. **upon reading data8 through strings i get the password**
       - `strings data8`
 
 *hopefully the nextt question won't be this long, i referred to many different pages in manual and wiki for headers*
