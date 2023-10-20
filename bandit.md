@@ -192,5 +192,36 @@ documentation of overthewirebandit progress
 
 ---
 
+### level 12-> 13
+
+**the difficulty suddenly spiked**
+1.  **following the instructions in the question i made a directory in tmp**
+    -  `mkdir/tmp/wow/`
+
+2. **copied data.txt to the location**
+    -  `cp ./data.txt /tmp/ wow/data.txt
+
+3. **since it's a hexfile, i tried to revert xxd**
+    -  `xxd -r data.txt wow1`
+
+4. **seeing 'data2.bin' in the output made me curious enough,after learning more about hexdumps i made sure to check for a file signature, seeing** `1f85`**gave me hint to 'wow1' being a gzip file and as the question mentions about the file being compressed many times**
+     -  `mv wow1 wow1.gz`
+     -  then i uncompress it
+         -  `gzip -d wow1.gz`
+       
+5. **after running xxd through**`wow1`**i see 425a with 68 too which corrosponds to bzip version2, obviously i couldn't figure it out without** [this](https://en.wikipedia.org/wiki/List_of_file_signatures) **now on renaming it to a .bz2 file and uncompressing it again,i can move ahead.**
+      -  `xxd wow1`
+      -  `mv wow1 wow1.bz2`
+      -  `bzip2 -d wow1.bz2`
+
+6.  **this time i see 1f85 again along with data5.bin but using the previous method gives nothing, however conerting wow1 to** `wow1.tar` **and then using tar command to unarchive gives data5.bin**
+      -  `xxd wow1`
+      -  `mv wow1 wow1.tar`
+      -  `tar -xf wow1.tar` *xf is for extracting all the files*
+7. **
+
+
+*password -> wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw*
+
 
 
