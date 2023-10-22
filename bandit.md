@@ -221,7 +221,7 @@ documentation of overthewirebandit progress
 6.  **this time i see 1f85 again along with data4.bin but using the previous method gives nothing, however conerting wow1 to** `wow1.tar` **and then using tar command to unarchive gives data5.bin**
       -  `xxd wow1`
       -  `mv wow1 wow1.tar`
-      -  `tar -xf wow1.tar` *xf is for extracting all the files*
+      -  `tar -xf wow1.tar`   -*xf is for extracting all the files*
 
     ![n2](https://github.com/oxo-crab/overthewire-bandit/blob/main/screenshot%20for%20writeup/q12_binn4.jpg)
 
@@ -257,6 +257,17 @@ documentation of overthewirebandit progress
 *password -> wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw*
 
 ---
+### level 13 -> 14
+
+**the private key was already shared to us in** `sshkey.private` **file, which was rsa encrypted**
+
+**this private key was to be used to login as bandit14 to get access to** `bandit14` **file in** `/etc/bandit_pass` **as it's only readable by bandit14 user**
+
+1.  `ssh -i sshkey.private bandit14@bandit.labs.overthewire.org`  -`-i ` *is for specifying that we are logging in by using a private rsa key*
+2.  `cat /etc/bandit_pass/bandit14`   
 
 
+*password -fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq*
+
+---
 
