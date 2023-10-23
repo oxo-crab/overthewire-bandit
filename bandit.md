@@ -296,9 +296,10 @@ documentation of overthewirebandit progress
 ### level  16 -> 17
 
 **the question requires us to investigate the various ports of the server at once, so using nmap made sense**
-    -  `nmap -p 3100-32000 bandit.labs.overthewire.org`
+  -  `nmap -p 3100-32000 bandit.labs.overthewire.org`
+   
+![a](https://github.com/oxo-crab/overthewire-bandit/blob/main/screenshot%20for%20writeup/q16%20.jpg)
 
-    ![n](https://github.com/oxo-crab/overthewire-bandit/blob/main/screenshot%20for%20writeup/q16%20.jpg)
 **shows 4 available ports with open state, meaning it's listening**
 
 **i use** `openssl s_client -connect bandit.labs.overthewire.org:port` **for each port to check which one i can successfully connect to. I manage to connect to 31518 port but submitting the previous answer returnns me the same thing, meanaing this isn't the correct port. I again manage to connect to 31790, on submitting the password of previous level i get a private rsa key which i copy to my machine**'
