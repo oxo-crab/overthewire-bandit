@@ -263,8 +263,9 @@ documentation of overthewirebandit progress
 
 **this private key was to be used to login as bandit14 to get access to** `bandit14` **file in** `/etc/bandit_pass` **as it's only readable by bandit14 user**
 
-1.  `ssh -i sshkey.private bandit14@bandit.labs.overthewire.org -p 2220`  -`-i ` *is for specifying that we are logging in by using a private rsa key*
-2.  `cat /etc/bandit_pass/bandit14`   
+1.  `ssh -i sshkey.private bandit14@bandit.labs.overthewire.org -p 2220`  -`
+    -  -i ` *is for specifying that we are logging in by using a private rsa key*
+3.  `cat /etc/bandit_pass/bandit14`   
 
 
 *password -fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq*
