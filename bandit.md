@@ -286,7 +286,7 @@ documentation of overthewirebandit progress
 ### level 15 -> 16
 **since we are supposed to connect using ssl encryption, we use** `s_client`, `nc` **is for raw connection**
 
-`openssl s_client connect localhost:30001`
+`openssl s_client -connect localhost:30001`
 
 *password -JQttfApK4SeyHwDlI9SXGR50qclOAil1*
 
