@@ -199,7 +199,7 @@ documentation of overthewirebandit progress
     -  `mkdir/tmp/wow/`
 
 2. **copied data.txt to the location**
-    -  `cp ./data.txt /tmp/ wow/data.txt
+    -  `cp ./data.txt /tmp/ wow/data.txt`
 
 3. **since it's a hexfile, i tried to revert xxd**
     -  `xxd -r data.txt wow1`
@@ -264,7 +264,7 @@ documentation of overthewirebandit progress
 **this private key was to be used to login as bandit14 to get access to** `bandit14` **file in** `/etc/bandit_pass` **as it's only readable by bandit14 user**
 
 1.  `ssh -i sshkey.private bandit14@bandit.labs.overthewire.org -p 2220`  -`
-    -  -i ` *is for specifying that we are logging in by using a private rsa key*
+    -  `-i ` *is for specifying that we are logging in by using a private rsa key*
 3.  `cat /etc/bandit_pass/bandit14`   
 
 
