@@ -300,7 +300,7 @@ documentation of overthewirebandit progress
 **shows 4 available ports with open state, meaning it's listening**
 
 **i use** `openssl s_client -connect bandit.labs.overthewire.org:port` **for each port to check which one i can successfully connect to. I manage to connect to 31518 port but submitting the previous answer returnns me the same thing, meanaing this isn't the correct port. I again manage to connect to 31790, on submitting the password of previous level i get a private rsa key which i copy to my machine**'
-    -  `echo -----BEGIN RSA PRIVATE KEY-----
+    -  `echo '-----BEGIN RSA PRIVATE KEY-----
 MIIEogIBAAKCAQEAvmOkuifmMg6HL2YPIOjon6iWfbp7c3jx34YkYWqUH57SUdyJ
 imZzeyGC0gtZPGujUSxiJSWI/oTqexh+cAMTSMlOJf7+BrJObArnxd9Y7YT2bRPQ
 Ja6Lzb558YW3FZl87ORiO+rW4LCDCNd2lUvLE/GL2GWyuKN0K5iCd5TbtJzEkQTu
@@ -326,7 +326,7 @@ YOdjHdSOoKvDQNWu6ucyLRAWFuISeXw9a/9p7ftpxm0TSgyvmfLF2MIAEwyzRqaM
 77pBAoGAMmjmIJdjp+Ez8duyn3ieo36yrttF5NSsJLAbxFpdlc1gvtGCWW+9Cq0b
 dxviW8+TFVEBl1O4f7HVm6EpTscdDxU+bCXWkfjuRb7Dy9GOtt9JPsX8MBTakzh3
 vBgsyi/sN3RqRBcGU40fOoZyfAMT8s1m/uYv52O6IgeuZ/ujbjY=
------END RSA PRIVATE KEY-----' > rsakey.private
+-----END RSA PRIVATE KEY-----' > rsakey.private`
 
 **after logging out of the session, i get into 17th level using this private rsa key with this command** `ssh -i rsakey.private bandit17@bandit.labs.overthewire.org -p 2220` **from there i change directory** `cd etc/bandit_pass/` **and then read the password by** `cat bandit117`
 
