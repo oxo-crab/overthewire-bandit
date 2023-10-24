@@ -351,6 +351,15 @@ vBgsyi/sN3RqRBcGU40fOoZyfAMT8s1m/uYv52O6IgeuZ/ujbjY=
 
 ### level 18 -> 19
 
-**by log
+**by logging in we get disconnected with byebye message. As it says in the question, thhe bashrc file in badnit18 is the reason. I was stuck for some time and decided to go through all manual pages in hints provided.**
+
+**After going through manual page of ssh, i realised i can append additional command which will run in remote host instead of login shell, trying that i got the password**
+
+`ssh  bandit18@bandit.labs.overthewire.org -p 2220 cat readme`
+
+*password - awhqfNnAbc1naukrpqDYcF95h7HoMTrC*
+
+---
+
 
 
