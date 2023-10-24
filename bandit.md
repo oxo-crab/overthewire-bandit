@@ -331,7 +331,26 @@ dxviW8+TFVEBl1O4f7HVm6EpTscdDxU+bCXWkfjuRb7Dy9GOtt9JPsX8MBTakzh3
 vBgsyi/sN3RqRBcGU40fOoZyfAMT8s1m/uYv52O6IgeuZ/ujbjY=
 -----END RSA PRIVATE KEY-----' > rsakey.private`
 
-**after logging out of the session, i get into 17th level using this private rsa key with this command** `ssh -i rsakey.private bandit17@bandit.labs.overthewire.org -p 2220` **from there i change directory** `cd etc/bandit_pass/` **and then read the password by** `cat bandit117`
+**after logging out of the session, i get into 17th level using this private rsa key with this command** `ssh -i rsakey.private bandit17@bandit.labs.overthewire.org -p 2220` **from there i change directory** `cd etc/bandit_pass/` **and then read the password by** `cat bandit17`
 
 *password - VwOSWtCA7lRKkTfbr2IDh6awj9RNZM5e*
+
+---
+
+## level 17 ->18
+
+**in this level, there are 2 files** - `passwords.new` **and** `passwords.old` **the password to the next level is stored in passwords.new and it's the only line that differes from passwords.old so i used** `diff` **as it would be a lot easier than using cat and grep to compare the strings from those 2 files**
+
+`diff  passwords.new passwords.old` 
+
+**this command gave the 2 lines which differed in the order mentioned in command**
+
+*password - hga5tuuCLF6fFzUpnagiMN8ssu9LFrdg*
+
+---
+
+### level 18 -> 19
+
+**by log
+
 
