@@ -369,7 +369,10 @@ vBgsyi/sN3RqRBcGU40fOoZyfAMT8s1m/uYv52O6IgeuZ/ujbjY=
 
 ### level 20 -> 21
 
+**first i ran** `nc -l -p 3301 &` **to setup server with a port to connect to and setting it in background, the id is 1. After this, i ran** `./suconnect 3301 &` **setting this is in background too, the id for this is 2, then i brought back nc in foreground by doing this** `fg 1` **and then that job resumed, there i copy paste the password and get the password to level 21 back**
+
 *password -NvEJF7oVjkddltPSrdKEFOllh9V1IBcq*
 
+---
 
 
