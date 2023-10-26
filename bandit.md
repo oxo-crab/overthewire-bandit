@@ -361,5 +361,10 @@ vBgsyi/sN3RqRBcGU40fOoZyfAMT8s1m/uYv52O6IgeuZ/ujbjY=
 
 ---
 
+### level 19 -> 20
+
+**according to hint, i was supposed to check for permissions for files in**  `/home/bandit19`**the file** `bandit20-do` **had** `rwsr-x--- ` **permission and the user for this file is bandit20 and group is bandit19, the first 3 characters in permission signify the perrmission granted to the user, seeing** `s` **shows that file has suid permission, basically it can be executed by any user with same permissions as the user. On executing the file with** `./bandit20-do` **it says** *`Run a command as another user.`* **so assuming it runs command as bandit 20, we can use this to read bandit20 password like this:**  `./bandit20-do  cat /etc/bandit_pass/bandit20`
+
+*password - VxCazJaVykI6W36BkBU0mJTCM8rR95XT*
 
 
