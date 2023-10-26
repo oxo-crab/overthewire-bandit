@@ -375,4 +375,16 @@ vBgsyi/sN3RqRBcGU40fOoZyfAMT8s1m/uYv52O6IgeuZ/ujbjY=
 
 ---
 
+### level 21 -> 22
+
+**first i changed the directory to** `/etc/cron.d` **after running** `ls -l` **i notice a file:** `cronjob_bandit22` ** i decide to check for cronjob as per given hint by using** `cat cronjob_bandit22` **i get the following output:**  `* * * * * bandit22 /usr/bin/cronjob_bandit22.sh &> /dev/null` **the five star indicates that this file runs all the time, i decide to see the content of** `cronjob_bandit22.sh` **by using** `cat cronjob_bandit22.sh` 
+
+**the output is:**  `#!/bin/bash
+chmod 644 /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+cat /etc/bandit_pass/bandit22 > /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv`
+**it essentially means that there is a file being made with 644,can be read and written by user and the password for level 22 is being written on the file in tmp directory, so i decide to cat the file too see the password** `cat  /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv`
+
+*password - WdDozAdTM2z9DiFEQ2mGlwngMfj4EZff*
+
+---
 
